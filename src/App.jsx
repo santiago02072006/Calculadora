@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Calculator = () => {
-  const [input, setInput] = useState("");  // Almacena el valor de la pantalla
+  const [input, setInput] = useState(""); // Almacena el valor de la pantalla
 
   // Función para manejar los clics de los botones
   const handleClick = (value) => {
@@ -11,15 +11,15 @@ const Calculator = () => {
   // Función para manejar la operación de evaluación de la expresión
   const handleEvaluate = () => {
     try {
-      setInput(eval(input).toString());  // Evalúa la expresión y convierte el resultado a string
+      setInput(eval(input).toString()); // Evalúa la expresión y convierte el resultado a string
     } catch (error) {
-      setInput("Error");  // En caso de error, muestra "Error"
+      setInput("Error"); // En caso de error, muestra "Error"
     }
   };
 
   // Función para borrar la pantalla
   const handleClear = () => {
-    setInput("");  // Resetea el valor de la pantalla
+    setInput(""); // Resetea el valor de la pantalla
   };
 
   return (
@@ -28,7 +28,7 @@ const Calculator = () => {
         <input type="text" value={input} readOnly />
       </div>
       <div className="buttons">
-        <button onClick={() => handleClick("1")}>1</button>
+        <button onClick={() => handleClick("1a")}>1</button>
         <button onClick={() => handleClick("2")}>2</button>
         <button onClick={() => handleClick("3")}>3</button>
         <button onClick={() => handleClick("4")}>4</button>
