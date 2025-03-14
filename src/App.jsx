@@ -28,10 +28,10 @@ const Calculator = () => {
         <input type="text" value={input} readOnly />
       </div>
       <div className="buttons">
-        <button onClick={() => handleClick("1a")}>1</button>
-        <button onClick={() => handleClick("2")}>2</button>
-        <button onClick={() => handleClick("3")}>3</button>
-        <button onClick={() => handleClick("4")}>4</button>
+        <button onClick={() => handleClick("1")}>uno</button>
+        <button onClick={() => handleClick("2")}>dos</button>
+        <button onClick={() => handleClick("3")}>tres</button>
+        <button onClick={() => handleClick("4")}>cuatro</button>
         <button onClick={() => handleClick("5")}>5</button>
         <button onClick={() => handleClick("6")}>6</button>
         <button onClick={() => handleClick("7")}>7</button>
